@@ -22,7 +22,7 @@
             <h1>Starboy</h1>
             <p>The Weeknd, Daft Punk</p>
 
-            <audio controls>
+            <audio id="song">
                 <source src="media/Starboy.mp3" srcset="" type="audio/mpeg">
             </audio>
             <input type="range" name="" id="progress" value="0">
@@ -31,8 +31,8 @@
                 <div>
                     <i class="fa-solid fa-backward-step"></i>
                 </div>
-                <div>
-                    <i class="fa-solid fa-play"></i>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-pause" id="ctrlIcon"></i>
                 </div>
                 <div>
                     <i class="fa-solid fa-forward-step"></i>
